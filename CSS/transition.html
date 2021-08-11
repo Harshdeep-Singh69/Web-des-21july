@@ -1,0 +1,45 @@
+<!--
+transition:
+transition-property
+transition-duration
+transition-delay
+transition-timing-function:
+	->ease-in
+	->ease-out 
+	->ease-in-out
+	->linear
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#aa{
+			width: 200px;
+			height: 200px;
+			background-color: lightgrey;
+			transition-property: width;
+			transition-duration: 15s;
+			/*transition-delay: 2s;*/
+			transition-timing-function: linear;
+		}
+		#ab{
+			width: 250px;
+			height: 250px;
+			background-color: hotpink;
+		}
+		#aa:hover{
+			width: 500px ;
+			background-color: #333;
+		}
+		#ab:hover{
+			width: 400px;
+		}
+	</style>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="aa"></div>
+	<div id="ab"></div>
+</body>
+</html>
